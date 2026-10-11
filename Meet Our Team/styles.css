@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+:root{
+    --primary-color: #4ade80;
+    --primary-dark: #22c55e;
+    --primary-light: #86efac;
+    --bg-dark: #1a1a1a;
+    --text-light: #f3f4f6;
+    --text-gray: #9ca3af;
+    --card-bg: #252525;
+    --card-hover: #2e2e2e;
+    --border-radius: 12px;
+    --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 20px 25px rgba(0, 0, 0, 0.15);
+}
+
+body{
+    background: var(--bg-dark);
+    color: var(--text-gray);
+    align-items: flex-start;
+    min-height: 100vh;
+    justify-content: center;
+    display: flex;
+    padding: 40px 20px;
+    line-height: 1.6;
+}
+
+.line{
+    padding: 3px;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(450px);
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 30px;
+    width: 10%;
+    height: 6%;
+    background-color: #8b5cf6;
+}
+
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+header h1{
+    color: var(--primary-color);
+    font-weight: 1200;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p{
+    color: var(--text-gray);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.team{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1030px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}   
+
+.member1{
+    text-align: center;
+    margin-bottom: 0;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    width: 100%;
+    max-width: none;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.member1:hover{
+    transform: translateY(-10px);
+    transition: 0.5s ease;
+}
+
+.cover {
+    height: 103px;
+    width: 100%;
+    background: linear-gradient(135deg, #a78bfa, #8b5cf6);
+    border-radius: 10px 10px 0 0;
+}
+
+.team-header{
+    text-align: center;
+    padding: 0 0 25px;
+}
+
+.team-header h2 {
+    color: #f3f4f6;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.team-header h3 {
+    color: #c4b5fd;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.team-header h2,
+.team-header h3 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.team-header img{
+    display: block;
+    border-radius: 50%;
+    border: 4px solid #252525;
+    margin: -45px auto 15px;
+    width: 85px;
+    height: 85px;
+    object-fit: cover;
+    position: relative;
+}
+
+.team-footer{
+    border-top: 1px solid #3a3a3a;
+    padding: 0 20px 22px;
+    text-align: center;
+}
+
+.team-footer p {
+    padding: 25px;
+    font-size: 13px;
+    color: #d1d5db;
+    margin-bottom: 20px;
+}
+
+.icons{
+    padding: 0;
+}
+
+.icons button{
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    background-color: #3a3a3a;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.footer {
+    padding: 40px;
+    background-color: var(--card-bg);
+    justify-content: center;
+    text-align: center;
+}
+
+.footer h2{
+    color: #6040ab;
+    margin-bottom: 5px;
+}
+
+.footer p{
+    margin-bottom: 30px;
+}
+
+.footer button{
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-family: sans-serif;
+    background-color: #c4b5fd;
+    font-weight: 600;
+    width: 30%;
+    height: 30%;
+    cursor: pointer;
+    color: #1a1a1a;
+    background: linear-gradient(135deg, #a78bfa, #8b5cf6);
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
+}
+
+.footer button:hover{
+    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+    transform: translateY(-5px);
+    transition: 0.4s ease;
+    box-shadow: 0 6px 18px rgba(139, 92, 246, 0.6);
+}
+
+.icons button:hover{
+    background-color: #8b5cf6;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 900px) {
+    .team {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .team {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+    }
+}

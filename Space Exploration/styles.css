@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "BillionStars";
+    src: url("BillionStars_PersonalUse.ttf");
+}
+
+body{
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+}
+
+#title{
+    text-shadow: 0px 0px 4px black;
+}
+
+#logo{
+    width: 100px;
+}
+
+#hero {
+    background-image: url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjdmMzl2b3I0cjB1aDJtdTUzcGx4OTFzMzF1MXBhcDE0ZWhtZWdueCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iicDrNGWxHmDrIni6j/giphy.gif");
+    background-size: cover;
+    padding: 10px 0 40px 0;
+}
+
+h3 {
+    padding: 10px;
+    background: white;
+    color: black;
+}
+
+.btn {
+    padding: 5px 10px;
+    background: white;
+    border: none;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+.ctn {
+    border-bottom: 3px solid white;
+    color: white;
+}

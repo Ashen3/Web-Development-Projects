@@ -1,0 +1,98 @@
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    text-align: center;
+    font-family: "Oswald";
+}
+
+#hero {
+    background-image: url("images/island.jpg");
+    background-size: cover;
+    padding: 150px;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hero h1, #hero p{
+    padding: 5px 10px;
+    margin-top: 5px;
+    margin: 5px 0 10px 0;
+    background: #0077b6;
+    border-radius: 5px;
+    text-shadow: 0px 0px 1px black;
+}
+
+#hero p{
+    background: #03045e;
+}
+
+#activities {
+    margin-top: 5px;
+    background-color: #EDFCF3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+#activities h2 {
+    color: #03045e;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+span {
+    border-bottom: 4px solid;
+}
+
+.todo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #0B6999;
+    padding: 20px;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    text-shadow: 0px 0px 1px;
+}
+
+.activity-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+#guide-info {
+    margin: 10px auto 0;
+    border-radius: 5px;
+    background: #C6E9FB;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border-bottom: 6px solid #BBDDCE;
+    padding: 20px;
+    color: #084F72;
+    height: 200px;
+    gap: 10px;
+}
+
+#guide-info img {
+    border-radius: 4px;
+    width: 190px;
+}
+
+
+

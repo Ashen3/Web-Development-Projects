@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Digital-7';
+    src: url('./digital_7/digital-7.ttf') format('truetype');
+}
+
+.orbitron{
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+    margin: 0 auto;
+    background-color: darkblue;
+    width: 50%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+#home, #guest{
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+
+#home, #guest {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.scoreboard {
+    background: black;
+    width: 200px;
+    height: 160px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 6px;
+}
+
+#home-score, #guest-score {
+   font-family: 'Orbitron', sans-serif;
+   color: rgb(244, 40, 40);
+   text-align: center;
+   padding: 30px;
+   font-size: 80px;
+}
+
+button{
+    width: 55px;
+    padding: 10px;
+    font-family: 'Orbitron', sans-serif;
+    border: 3px solid lightblue;
+    border-radius: 5px;
+    background: darkblue;
+    color: lightblue;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button:hover {
+    border-color: rgb(53, 237, 237);
+}
